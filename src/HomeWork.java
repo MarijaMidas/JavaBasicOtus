@@ -7,6 +7,8 @@ public class HomeWork {
             System.out.println("Please enter you full name");
             String fullName = sc.nextLine();
             String encodedFullName = Base64.getEncoder().encodeToString(fullName.getBytes());
-            System.out.println("Program result: " + encodedFullName);
+
+            HomeworkTemplate homeworkTemplate = new HomeworkTemplate();
+            homeworkTemplate.testing();
     }
 }
