@@ -12,5 +12,6 @@ public class HomeWork {
             System.out.println("Program result: " + encodedFullName);
 
             HomeworkTemplate.testing();
+            HomeworkTemplate.increaseArray();
     }
 }
