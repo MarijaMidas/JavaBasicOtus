@@ -1,4 +1,4 @@
-package JavaSyntax;
+package JavaSyntax.SimpleProgram;
 import java.util.Arrays;
 import java.util.Scanner;
 public class HomeworkTemplate {
@@ -42,10 +42,10 @@ public class HomeworkTemplate {
 
         System.out.println("Результат: правильно " + correctCount + ", неправильно " + wrongCount);
     }
-    public static void increaseArray() {
-        String[] array = new String[]{"Test"};
+    public static void increaseAndAddToArray(String newString) {
+        String[] array = new String[]{"Application"};
         array = Arrays.copyOf(array, array.length + 1);
-        array[array.length - 1] = "AnyString";
+        array[array.length - 1] = newString;
 
         System.out.println(Arrays.toString(array));
     }
