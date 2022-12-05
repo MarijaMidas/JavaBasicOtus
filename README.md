@@ -1,3 +1,3 @@
 # JavaBasicOtus
-New HomeWork
+New JavaSyntax.HomeWork
 Begin 24.11

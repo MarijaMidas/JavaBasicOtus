@@ -1,3 +1,5 @@
+package JavaSyntax;
+
 import java.util.Base64;
 import java.util.Scanner;
 
@@ -10,5 +12,6 @@ public class HomeWork {
             System.out.println("Program result: " + encodedFullName);
 
             HomeworkTemplate.testing();
+            HomeworkTemplate.increaseArray();
     }
 }
