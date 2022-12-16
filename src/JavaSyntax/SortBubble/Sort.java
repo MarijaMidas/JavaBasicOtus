@@ -11,12 +11,13 @@ public class Sort {
         for (int i = 0; i < nums.length; i++) {
             nums[i] = random.nextInt(1000);
         }
+        int[] numsCopy = Arrays.copyOf(nums,1000);
         System.out.println(new Date().getTime());
         bubbleSort(nums);
         System.out.println(new Date().getTime());
         System.out.println("-------------------");
         System.out.println(new Date().getTime());
-        Arrays.sort(nums);
+        Arrays.sort(numsCopy);
         System.out.println(new Date().getTime());
     }
     public static int[] bubbleSort(int[]num) {
