@@ -12,23 +12,22 @@ public class Main {
         Map<Integer,String> home = null;
         try {
            home =  home1.createHomeList();
-        } catch (numberException e) {
+        } catch (NumberException e) {
             e.printStackTrace();
             System.out.println("Не удалось создать новый список жителей. Учитывайте при записи отсутствие квартиры №4");
             try {
                 home1.createHomeList();
-            } catch (numberException ex) {
+            } catch (NumberException ex) {
                 throw new RuntimeException(ex);
             }
         }
 
-        try {
-            BufferedWriter writer = new BufferedWriter(new FileWriter("Test", false));
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("Test", false))){
             String file = home.toString();
             writer.write(file);
             writer.flush();
             try {
-                Path path = Paths.get("Test.txt");
+                Path path = Paths.get("Test");
                 Scanner sc = new Scanner(path);
                 while (sc.hasNext()){
                     System.out.println(sc.next());
