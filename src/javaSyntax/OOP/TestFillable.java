@@ -1,4 +1,4 @@
-package JavaSyntax.OOP;
+package javaSyntax.OOP;
 
 public interface TestFillable {
     void fillQuestion(String question);

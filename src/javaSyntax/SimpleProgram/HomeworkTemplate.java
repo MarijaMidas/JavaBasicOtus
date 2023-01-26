@@ -1,4 +1,4 @@
-package JavaSyntax.SimpleProgram;
+package javaSyntax.SimpleProgram;
 import java.util.Arrays;
 import java.util.Scanner;
 public class HomeworkTemplate {

@@ -1,4 +1,4 @@
-package JavaSyntax.OOP;
+package javaSyntax.OOP;
 
 import java.util.Scanner;
 public class UserResponse {
