@@ -1,4 +1,4 @@
-package JavaSyntax.Collection;
+package javaSyntax.Collection;
 
 import java.util.Objects;
 public class Client {

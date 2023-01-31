@@ -1,4 +1,4 @@
-package JavaSyntax.SimpleProgram;
+package javaSyntax.SimpleProgram;
 
 import java.util.Base64;
 import java.util.Scanner;

@@ -1,13 +1,15 @@
-package JavaSyntax.Collection;
+package javaSyntax.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class Application {
         public static void main(String[] args) {
             Map<Account, Client> clientAccounts = getClientAccounts();
+            //Map<Client, Set<Account>>accounts = ;
             Client client = new Client("Piter", 35);
             getAccount(client);
-            Account account = new Account(350);
+            Account account = new Account(215);
             getClient(account);
         }
         private static void getAccount(Client client){
