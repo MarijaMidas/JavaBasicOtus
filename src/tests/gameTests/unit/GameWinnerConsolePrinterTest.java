@@ -7,9 +7,11 @@ import java.util.Objects;
 
 public class GameWinnerConsolePrinterTest implements GameWinnerPrinter {
     public String result;
+    public  Player winner;
     @Override
     public void printWinner(Player winner) {
         this.result = winner.getName();
+        this.winner = winner;
     }
 
     @Override

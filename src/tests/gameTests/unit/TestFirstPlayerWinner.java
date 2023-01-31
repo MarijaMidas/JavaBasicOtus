@@ -6,12 +6,12 @@ public class TestFirstPlayerWinner {
     public void testFirstPlayerWin(){
         String scenario = "Тест на победу первого игрока";
         try{
-            Dice dice = new TestDiceImplFirstWinner();
-            GameWinnerPrinter winnerPrinter = new GameWinnerConsolePrinterTest();
-            Game game = new Game(dice, winnerPrinter);
-            String expected = "Вася";
-            game.playGame(new Player("Вася"), new Player("Игорь"));
-            String actual = winnerPrinter.toString();
+            Dice diceTest = new TestDiceImplFirstWinner();
+            GameWinnerConsolePrinterTest winnerPrinter = new GameWinnerConsolePrinterTest();
+            Game gameTest = new Game(diceTest, winnerPrinter);
+            Player expected = new Player("Вася");
+            gameTest.playGame(expected, new Player("Игорь"));
+            Player actual = winnerPrinter.winner;
             Assertions.assertEquals(expected,actual);
             System.out.printf("\"%s\" passed %n", scenario);
 

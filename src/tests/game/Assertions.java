@@ -19,7 +19,7 @@ public class Assertions {
         }
     }
 
-    public static void assertEquals(Class<? extends Throwable> expected, Class<? extends Throwable> actual) {
+    public static void assertEquals(Class<? > expected, Class<? > actual) {
         if (!expected.equals(actual)) {
             throw new AssertionError(String.format("Expected \"%s\" = \"%s\"", expected, actual));
         }
@@ -41,5 +41,10 @@ public class Assertions {
         }
     }
 
+    public static void assertEquals(Object expected, Object actual) {
+        if (expected != actual) {
+            throw new AssertionError(String.format("Expected %d = %d", expected, actual));
+        }
+    }
 }
 

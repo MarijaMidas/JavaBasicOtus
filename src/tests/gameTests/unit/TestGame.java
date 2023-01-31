@@ -26,10 +26,9 @@ public class TestGame {
             Dice expected = new DiceImpl();
             DiceImpl actual = new DiceImpl();
             Assertions.assertEquals(expected.getClass().getSimpleName(), actual.getClass().getSimpleName());
-            System.out.println(expected.getClass().getSimpleName());
             System.out.printf("\"%s\" passed %n", scenario);
         }catch (Error e){
             System.err.printf("\"%s\" fails with message \"%s\" %n", scenario, e.getMessage());
-        };
+        }
     }
 }
