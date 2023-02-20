@@ -1,5 +1,8 @@
 package tests.game;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Assertions {
     public static void assertEquals(int expected, int actual) {
         if (expected != actual) {
@@ -14,6 +17,10 @@ public class Assertions {
     }
 
     public static void assertEquals(String expected, String actual) {
+        if (!expected.equals(actual)) {
+            throw new AssertionError(String.format("Expected \"%s\" = \"%s\"", expected, actual));
+        }
+    }public static void assertEquals(ArrayList expected, ArrayList actual) {
         if (!expected.equals(actual)) {
             throw new AssertionError(String.format("Expected \"%s\" = \"%s\"", expected, actual));
         }
